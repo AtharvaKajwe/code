@@ -1,13 +1,15 @@
 /** @type {import('tailwindcss').Config} */
+
+
 export default {
     content: ["./src/**/*.{jsx,tsx}", "./*.html"],
     theme: {
         extend: {
             colors: {
                 dark: "#212429", //background
-                darkHover: "#97DFFC", //box
-                light: "#f5f5f5",
-                primary: "#39E079",
+                darkHover: "#1e1e39", //box
+                light: "#000000",
+                primary: "#FFCFBD", //join room box
                 danger: "#ef4444",
             },
             fontFamily: {

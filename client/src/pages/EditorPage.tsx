@@ -49,7 +49,7 @@ function EditorPage() {
     }
 
     return (
-        <SplitterComponent>
+        <SplitterComponent >
             <Sidebar />
             <AISidebar />
             <WorkSpace/>

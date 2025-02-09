@@ -90,13 +90,16 @@ const FormComponent = () => {
 
     return (
         <div className="flex w-full max-w-[500px] flex-col items-center justify-center gap-4 p-4 sm:w-[500px] sm:p-8">
-            <img src={logo} alt="Logo" className="w-full"/>
+
+            
+
+            <img src={logo} alt="Logo" className="w-[200px]"/>
             <form onSubmit={joinRoom} className="flex w-full flex-col gap-4">
                 <input
                     type="text"
                     name="roomId"
                     placeholder="Room Id"
-                    className="w-full rounded-md border border-gray-500 bg-darkHover px-3 py-3 focus:outline-none"
+                    className="w-full rounded-md border border-gray-500 bg-#FFE2EF px-3 py-3 focus:outline-none "
                     onChange={handleInputChanges}
                     value={currentUser.roomId}
                 />
@@ -104,16 +107,16 @@ const FormComponent = () => {
                     type="text"
                     name="username"
                     placeholder="Username"
-                    className="w-full rounded-md border border-gray-500 bg-darkHover px-3 py-3 focus:outline-none"
+                    className="w-full rounded-md border border-gray-500 bg-#FFE2EF px-3 py-3 focus:outline-none"
                     onChange={handleInputChanges}
                     value={currentUser.username}
                     ref={usernameRef}
                 />
                 <button
                     type="submit"
-                    className="mt-2 w-full rounded-md bg-primary px-8 py-3 text-lg font-semibold text-black"
+                    className="mt-2 w-full rounded-md bg-primary px-8 py-3 text-lg font-semibold text-black color-#FFE2EF"
                 >
-                    Join
+                    <span>Join Room</span>
                 </button>
             </form>
             <button

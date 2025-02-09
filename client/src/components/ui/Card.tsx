@@ -8,12 +8,12 @@ interface CardProps {
 
 export function Card({ children, className = "", style }: CardProps) {
   return (
-    <div className={`rounded-lg bg-gray-900 p-4 text-white shadow-md ${className}`} style={style}>
+    <div className={`rounded-lg bg-[#434358] border-2 border-white p-4 text-white shadow-md flex flex-col item-start transition ${className}`} style={style}>
       {children}
     </div>
   );
 }
 
 export function CardContent({ children, className = "" }: CardProps) {
-  return <div className={`p-2 ${className}`}>{children}</div>;
+  return <div className={`p-2 flex flex-col top-0 bottom-0 ${className}`}>{children}</div>;
 }

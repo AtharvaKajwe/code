@@ -3,7 +3,7 @@ import Sidebar from "@/components/sidebar/Sidebar";
 
 export default function DrawingPage() {
   return (
-    <div className="flex h-screen">
+    <div className="flex h-screen bg-white">
       {/* Sidebar */}
       <Sidebar />
 

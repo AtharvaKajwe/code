@@ -40,10 +40,10 @@ export default function AISidebar() {
 
       {/* AI Sidebar Panel (Right-Aligned) */}
       {isOpen && (
-        <Card className="absolute right-2 top-12 w-80 pointer-events-auto">
+        <Card className="absolute right-2 flex flex-col top-[125px] bottom-0 w-80 pointer-events-auto">
           <CardContent className="flex flex-col space-y-4">
             
-          {response && <div className="p-2 overflow-y-auto max-h-48 text-gray-300">{response}</div>}
+          {response && <div className="p-2 overflow-y-auto max-h-[470px] text-gray-300">{response}</div>}
             
             <Input
               placeholder="Ask AI..."

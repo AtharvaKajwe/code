@@ -13,19 +13,18 @@
 
 
 body {
+    
+    background: hsla(0, 0%, 100%, 1);
 
-    background: hsla(197, 100%, 63%, 1);
+background: linear-gradient(0deg, hsla(0, 0%, 100%, 1) 0%, hsla(32, 100%, 50%, 1) 0%, hsla(348, 84%, 55%, 1) 100%);
 
-background: linear-gradient(90deg, hsla(197, 100%, 63%, 1) 0%, hsla(294, 100%, 55%, 1) 100%);
+background: -moz-linear-gradient(0deg, hsla(0, 0%, 100%, 1) 0%, hsla(32, 100%, 50%, 1) 0%, hsla(348, 84%, 55%, 1) 100%);
 
-background: -moz-linear-gradient(90deg, hsla(197, 100%, 63%, 1) 0%, hsla(294, 100%, 55%, 1) 100%);
+background: -webkit-linear-gradient(0deg, hsla(0, 0%, 100%, 1) 0%, hsla(32, 100%, 50%, 1) 0%, hsla(348, 84%, 55%, 1) 100%);
 
-background: -webkit-linear-gradient(90deg, hsla(197, 100%, 63%, 1) 0%, hsla(294, 100%, 55%, 1) 100%);
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#FFFFFF", endColorstr="#FF8800", GradientType=1 );
 
-filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#40C9FF", endColorstr="#E81CFF", GradientType=1 );
-
-
-    font-family: "Space Grotesk", sans-serif;
+    font-family: "Lucid Console", sans-serif;
     width: 100%;
     max-width: 100%;
     overflow-x: hidden;
@@ -71,11 +70,13 @@ filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#40C9FF", en
 /* Editor */
 
 .cm-editor {
+    opacity: 0.8;
     max-height: 93vh;
 }
 
 .cm-editor .cm-scroller {
-    font-family: "Space Mono", monospace;
+    opacity: 0.8;
+    font-family: "Lucid Console", monospace;
     /* min-height: 100vh; */
 }
 
@@ -92,6 +93,7 @@ select {
     }
 
     .cm-editor .cm-scroller {
+        opacity: 1;
         min-height: calc(93vh - 60px);
     }
 }

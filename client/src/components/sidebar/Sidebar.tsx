@@ -63,7 +63,7 @@ function Sidebar() {
                 <SidebarButton viewName={VIEWS.RUN} icon={viewIcons[VIEWS.RUN]} />
                 <SidebarButton viewName={VIEWS.CLIENTS} icon={viewIcons[VIEWS.CLIENTS]} />
                 <SidebarButton viewName={VIEWS.SETTINGS} icon={viewIcons[VIEWS.SETTINGS]} />
-
+                
                 {/* Button to change activity state between Coding and Drawing */}
                 <div className="flex items-center justify-center h-fit">
                     <button
@@ -95,11 +95,12 @@ function Sidebar() {
                             float={true}
                         />
                     )}
+                    
                 </div>
             </div>
             <div
                 className="absolute left-0 top-0 z-20 max-w-[200px] flex-col bg-dark md:static md:min-w-[200px]"
-                style={isSidebarOpen ? {} : { display: "none" }}
+                style={isSidebarOpen ? {opacity: "1"} : { display: "none" }}
             >
                 {/* Render the active view component */}
                 {viewComponents[activeView]}
