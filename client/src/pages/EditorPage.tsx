@@ -11,7 +11,6 @@ import { SocketEvent } from "@/types/socket"
 import { USER_STATUS, User } from "@/types/user"
 import { useEffect } from "react"
 import { useLocation, useNavigate, useParams } from "react-router-dom"
-
 function EditorPage() {
     // Listen user online/offline status
     useUserActivity()
